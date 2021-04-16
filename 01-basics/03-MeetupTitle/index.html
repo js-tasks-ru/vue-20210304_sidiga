@@ -7,6 +7,16 @@
 <body>
 
 <!-- Решение -->
+<div id="app">
+  <div>
+    <label v-for="i in 5">
+      <input type="radio" name="meetupId" v-model="meetupId" :value="i" @change="handleMeetupIdChange"/>
+      {{ i }}
+    </label>
+  </div>
+
+  <span v-if="meetup">{{meetup.title}}</span>
+</div>
 
 <script type="module" src="script.js"></script>
 </body>
