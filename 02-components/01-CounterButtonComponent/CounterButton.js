@@ -24,5 +24,5 @@ export default {
   },
 
   // Шаблон потребуется отредактировать
-  template: '<button type="button" @click="incrementMethod(count)" >Add</button>',
+  template: '<button type="button" @click="incrementMethod(count)" >{{count}}</button>',
 };
